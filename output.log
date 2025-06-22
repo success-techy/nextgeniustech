@@ -1,0 +1,13 @@
+nohup: ignoring input
+
+> vite_react_shadcn_ts@0.0.0 dev
+> vite
+
+Re-optimizing dependencies because lockfile has changed
+
+  VITE v5.4.19  ready in 426 ms
+
+  ➜  Local:   http://localhost:8080/
+  ➜  Network: http://192.168.10.111:8080/
+1:35:18 PM [vite] hmr update /src/components/Hero.tsx, /src/index.css
+1:35:18 PM [vite] hmr update /src/components/Hero.tsx, /src/index.css

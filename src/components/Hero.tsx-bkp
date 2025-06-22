@@ -1,0 +1,50 @@
+
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Code, Server, Shield } from "lucide-react";
+
+export const Hero = () => {
+  return (
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 overflow-hidden">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-20 left-20 w-32 h-32 border border-white/20 rounded-full"></div>
+        <div className="absolute top-40 right-32 w-24 h-24 border border-white/20 rounded-full"></div>
+        <div className="absolute bottom-32 left-1/4 w-16 h-16 border border-white/20 rounded-full"></div>
+      </div>
+      
+      <div className="container mx-auto px-6 text-center relative z-10">
+        <div className="max-w-4xl mx-auto">
+          <div className="flex justify-center mb-6">
+            <div className="flex space-x-4">
+              <Code className="w-12 h-12 text-blue-300 animate-pulse" />
+              <Server className="w-12 h-12 text-blue-300 animate-pulse delay-100" />
+              <Shield className="w-12 h-12 text-blue-300 animate-pulse delay-200" />
+            </div>
+          </div>
+          
+          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+            Next Genius Tech
+          </h1>
+          
+          <p className="text-xl md:text-2xl text-blue-100 mb-8 leading-relaxed">
+            Master cutting-edge technologies and launch your IT career with industry-expert training
+          </p>
+          
+          <p className="text-lg text-blue-200 mb-10">
+            Located in Electronic City Phase 2, Bangalore - The Silicon Valley of India
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" className="bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white px-8 py-4 text-lg font-semibold transition-all duration-300 transform hover:scale-105">
+              Explore Courses
+              <ArrowRight className="ml-2 w-5 h-5" />
+            </Button>
+            <Button size="lg" variant="outline" className="border-blue-300 text-blue-100 hover:bg-blue-800/50 px-8 py-4 text-lg font-semibold">
+              Contact Us
+            </Button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
